@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1330px;
   margin: 0 auto;
 }
 
@@ -24,6 +24,7 @@ nav {
   top: 0;
   background-color: #382d2f;
   color: #D7D6D6;
+  z-index: 1;
 }
 
 nav img {
@@ -71,7 +72,48 @@ nav span {
 
 .jumbotron {
   height: 100vh;
-  background-color: gray;
+  background: radial-gradient(#f2ebd0, #94837c);
+}
+
+.jumbotron .main-logo {
+  width: 17vw;
+  margin-left: 3vw;
+}
+
+.jumbotron .owl-carousel {
+  width: 40vw;
+  height: 28vw;
+  border: 5px solid brown;
+  overflow: hidden;
+  position: absolute;
+  bottom: 10vh;
+  right: 300px;
+}
+
+.jumbotron .owl-carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+}
+
+.jumbotron .main-contact {
+  text-align: center;
+  width: 17vw;
+  margin-left: 3vw;
+  position: absolute;
+  bottom: 12vh;
+}
+
+.jumbotron .main-contact h3 {
+  font-size: 2.2vw;
+}
+
+.jumbotron .main-contact h4 {
+  font-size: 1.8vw;
+}
+
+.jumbotron .main-contact img {
+  margin-top: 30px;
 }
 
 /* COLUMN*/

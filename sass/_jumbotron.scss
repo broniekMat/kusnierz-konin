@@ -1,4 +1,46 @@
 .jumbotron {
     height: 100vh;
-    background-color: gray;
+    background: radial-gradient(#f2ebd0, #94837c);
+    //position: relative;
+
+    .main-logo {
+        width: 17vw;
+        //object-fit: cover;
+        margin-left: 3vw;
+    }
+
+    .owl-carousel {
+        width: 40vw;
+        height: 28vw;
+        border: 5px solid brown;
+        overflow: hidden;
+        position: absolute;
+        bottom: 10vh;
+        right: 300px;
+
+        img {
+            object-fit: cover;
+            padding: 10px;
+        }
+    }
+
+    .main-contact {
+        text-align: center;
+        width: 17vw;
+        margin-left: 3vw;
+        position: absolute;
+        bottom: 12vh;
+
+        h3 {
+            font-size: 2.2vw;
+        }
+
+        h4 {
+            font-size: 1.8vw;
+        }
+
+        img {
+            margin-top: 30px;
+        }
+    }
 }
