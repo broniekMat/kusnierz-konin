@@ -1,0 +1,39 @@
+.about {
+    height: 100vh;
+    background-color: $background-color-darker;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: $font-color-light;
+
+    img {
+        position: absolute;
+        left: 50%;
+        top: -38px;
+        transform: translate(-50%, 0);
+
+    }
+
+    h5 {
+        font-size: 2vw;
+        margin-top: 15px;
+    }
+
+    hr {
+        margin: 0 auto;
+    }
+
+    .spec {
+        margin-top: 50px;
+
+        hr {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .main-text {
+            font-size: 1.5vw;
+            font-weight: bold;
+        }
+    }
+}
