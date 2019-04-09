@@ -13,6 +13,7 @@ body {
 .container {
   max-width: 1330px;
   margin: 0 auto;
+  margin-right: 220px;
 }
 
 /* VARIABLES */
@@ -223,6 +224,7 @@ nav span {
 }
 
 .about .container {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,14 +232,13 @@ nav span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .about img {
   position: absolute;
-  left: 50%;
+  left: calc(50% - 110px);
   top: -38px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -252,17 +253,71 @@ nav span {
   margin: 0 auto;
 }
 
-.about .spec {
-  margin-top: 50px;
-}
-
-.about .spec hr {
+.about hr {
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
-.about .spec .main-text {
+.about .main-text {
   font-size: 1.5vw;
   font-weight: bold;
+}
+
+.services {
+  padding-top: 100px;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.services .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services .tab {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border: 1px solid green;
+}
+
+.services .tab-services-content {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.services .tab-services-content img {
+  width: 85%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.services .tab-services-content ul {
+  text-align: left;
+  padding-left: 100px;
+  list-style-image: url(/images/services/li-style.svg);
+}
+
+.services .tab-services-content .tabcontent {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid red;
 }
 /*# sourceMappingURL=style.css.map */
