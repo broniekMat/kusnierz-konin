@@ -264,9 +264,9 @@ nav span {
 }
 
 .services {
-  padding-top: 100px;
+  padding-top: 60px;
   height: 100vh;
-  background-color: lightblue;
+  background-color: #cbe5ee;
 }
 
 .services .container {
@@ -292,25 +292,72 @@ nav span {
   border: 1px solid green;
 }
 
-.services .tab-services-content {
+.services .tab .tablinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  height: 30px;
+}
+
+.services .tab .tablinks:first-child {
+  margin-top: 30px;
+}
+
+.services .tab .tablinks.active img {
+  height: 9px;
+  width: 37px;
+}
+
+.services .tab .tablinks.active p {
+  font-weight: bold;
+}
+
+.services .tab .tablinks img {
+  height: 0;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.services hr {
+  width: 10%;
+  margin: 0 auto;
+  border-color: #282121;
+  margin-bottom: 35px;
+}
+
+.tab-services-content {
   -ms-flex-preferred-size: 75%;
       flex-basis: 75%;
 }
 
-.services .tab-services-content img {
+.tab-services-content img {
   width: 85%;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.services .tab-services-content ul {
+.tab-services-content ul {
+  width: 85%;
+  margin: 0 auto;
+  padding-left: 50px;
   text-align: left;
-  padding-left: 100px;
   list-style-image: url(/images/services/li-style.svg);
 }
 
-.services .tab-services-content .tabcontent {
+.tab-services-content ul li {
+  padding: 3px 0;
+}
+
+.tab-services-content .tabcontent {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,5 +366,12 @@ nav span {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid red;
+}
+
+.tab-services-content .tabcontent .main-service {
+  text-align: left;
+  width: 85%;
+  margin: 0 auto;
+  font-size: 33px;
 }
 /*# sourceMappingURL=style.css.map */

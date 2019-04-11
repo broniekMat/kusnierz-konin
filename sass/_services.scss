@@ -1,7 +1,7 @@
 .services {
-    padding-top: 100px;
+    padding-top: 60px;
     height: 100vh;
-    background-color: lightblue;
+    background-color: rgb(203, 229, 238);
 
     .container {
         display: flex;
@@ -14,29 +14,86 @@
         flex-direction: column;
         text-align: center;
         border: 1px solid green;
-    }
 
-    .tab-services-content {
-        flex-basis: 75%;
-
-        img {
-            width: 85%;
-            height: 200px;
-            object-fit: cover;
-
-        }
-
-        ul {
-            text-align: left;
-            padding-left: 100px;
-            list-style-image: url(/images/services/li-style.svg);
-        }
-
-        .tabcontent {
-            text-align: center;
+        .tablinks {
             display: flex;
+            align-items: center;
             justify-content: center;
-            border: 1px solid red;
+            cursor: pointer;
+            height: 30px;
+
+            &:first-child {
+                margin-top: 30px;
+            }
+
+            &.active {
+                img {
+                    height: 9px;
+                    width: 37px;
+                    //display: block;
+                    //transition: 3s;
+                }
+
+                p {
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                height: 0;
+                width: 0;
+                //height: 9px;
+                //width: 37px;
+                //display: none;
+                transition: 0.5s;
+            }
+
+        }
+
+    }
+
+    hr {
+        width: 10%;
+        margin: 0 auto;
+        border-color: $font-color-dark;
+        margin-bottom: 35px;
+    }
+}
+
+.tab-services-content {
+    flex-basis: 75%;
+
+    img {
+        width: 85%;
+        height: 200px;
+        object-fit: cover;
+
+    }
+
+    ul {
+        width: 85%;
+        margin: 0 auto;
+        padding-left: 50px;
+        text-align: left;
+        list-style-image: url(/images/services/li-style.svg);
+
+        li {
+            padding: 3px 0;
         }
     }
+
+    .tabcontent {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border: 1px solid red;
+
+        .main-service {
+            text-align: left;
+            width: 85%;
+            margin: 0 auto;
+            font-size: 33px;
+        }
+    }
+
 }

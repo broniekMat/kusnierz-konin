@@ -84,26 +84,50 @@
 
             <div class="tab">
                 <h2>Wykonujemy usługi: </h2>
-                <p class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Kuśnierskie</p>
-                <p class="tablinks" onclick="openCity(event, 'Paris')">Krawieckie</p>
-                <p class="tablinks" onclick="openCity(event, 'Tokyo')">Tapicerskie</p>
-                <p class="tablinks" onclick="openCity(event, 'Tokyo')">Rymarskie</p>
-                <p class="tablinks" onclick="openCity(event, 'Tokyo')">Kaletnicze</p>
+                <hr>
+                <div class="tablinks" onclick="openServices(event, 'Kusnierz')">
+                    <img src="./images/services/li-style.svg" alt="">
+                    <p class="tablinks-text">Kuśnierskie</p>
+                </div>
+                <div class="tablinks" onclick="openServices(event, 'Medycyna')">
+                    <img src="./images/services/li-style.svg" alt="">
+                    <p class="tablinks-text">Medycyna</p>
+                </div>
+                <div class="tablinks" onclick="openServices(event, 'Krawiec')">
+                    <img src="./images/services/li-style.svg" alt="">
+                    <p class=" tablinks-text">Krawieckie</p>
+                </div>
+                <div class=" tablinks" onclick="openServices(event, 'Tapicer')" id="defaultOpen">
+                    <img src="./images/services/li-style.svg" alt="">
+                    <p class="tablinks-text">Tapicerskie</p>
+                </div>
+                <div class="tablinks" onclick="openServices(event, 'Rymarz')">
+                    <img src="./images/services/li-style.svg" alt="">
+                    <p class="tablinks-text">Rymarskie</p>
+                </div>
+                <div class="tablinks" onclick="openServices(event, 'Kaletnik')">
+                    <img src="./images/services/li-style.svg" alt="">
+                    <p class="tablinks-text">Kaletnicze</p>
+                </div>
             </div>
             <div class="tab-services-content">
-                <div id="London" class="tabcontent">
-                    <h3>Kuśnierskie</h3>
+                <div id="Kusnierz" class="tabcontent">
+                    <h3 class="main-service">Kuśnierskie</h3>
                     <img src="./images/services/banner-test.jpg" alt="">
                 </div>
 
-                <div id="Paris" class="tabcontent">
-                    <h3>Krawieckie</h3>
+                <div id="Medycyna" class="tabcontent">
+                    <h3 class="main-service">Medycyna</h3>
                     <img src="./images/services/banner-test.jpg" alt="">
                     <p>Paris is the capital of France.</p>
                 </div>
-
-                <div id="Tokyo" class="tabcontent">
-                    <h3>Tapicerskie</h3>
+                <div id="Krawiec" class="tabcontent">
+                    <h3 class="main-service">Krawieckie</h3>
+                    <img src="./images/services/banner-test.jpg" alt="">
+                    <p>Paris is the capital of France.</p>
+                </div>
+                <div id="Tapicer" class="tabcontent">
+                    <h3 class="main-service">Tapicerskie</h3>
                     <img src="./images/services/banner-test.jpg" alt="">
                     <ul>
                         <li>fotele, wypoczynki, narożniki, krzesła, pufy, sofy</li>
@@ -116,6 +140,17 @@
                         <li>tapicerka meblowa hoteli, restauracji, gabinetów, hal, szkół, miejsc użyteczności
                             publicznej, itp.</li>
                     </ul>
+                </div>
+                <div id="Rymarz" class="tabcontent">
+                    <h3 class="main-service">Rymarz</h3>
+                    <img src="./images/services/banner-test.jpg" alt="">
+                    <p>Paris is the capital of France.</p>
+                </div>
+                <div id="Kaletnik" class="tabcontent">
+
+                    <h3 class="main-service">Kaletnik</h3>
+                    <img src="./images/services/banner-test.jpg" alt="">
+                    <p>Paris is the capital of France.</p>
                 </div>
             </div>
         </div>
