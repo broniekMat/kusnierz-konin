@@ -1,7 +1,8 @@
 .services {
-    padding-top: 60px;
+    padding-top: 15px;
     height: 100vh;
-    background-color: rgb(203, 229, 238);
+    background-color: rgb(233, 239, 241);
+    background-color: white;
 
     .container {
         display: flex;
@@ -79,6 +80,18 @@
 
         li {
             padding: 3px 0;
+
+            ul {
+                padding-left: 35px;
+                margin-left: 0;
+                list-style-image: none;
+                list-style-type: disc;
+
+                li {
+                    padding: 0;
+                    line-height: 21px;
+                }
+            }
         }
     }
 

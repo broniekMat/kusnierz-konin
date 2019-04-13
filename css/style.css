@@ -264,9 +264,10 @@ nav span {
 }
 
 .services {
-  padding-top: 60px;
+  padding-top: 15px;
   height: 100vh;
-  background-color: #cbe5ee;
+  background-color: #e9eff1;
+  background-color: white;
 }
 
 .services .container {
@@ -355,6 +356,18 @@ nav span {
 
 .tab-services-content ul li {
   padding: 3px 0;
+}
+
+.tab-services-content ul li ul {
+  padding-left: 35px;
+  margin-left: 0;
+  list-style-image: none;
+  list-style-type: disc;
+}
+
+.tab-services-content ul li ul li {
+  padding: 0;
+  line-height: 21px;
 }
 
 .tab-services-content .tabcontent {
