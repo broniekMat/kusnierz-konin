@@ -1,0 +1,94 @@
+.price {
+    height: 100vh;
+    background-color: #fff;
+    color: $font-color-dark;
+    counter-reset: price;
+
+    hr {
+        width: 5%;
+        margin: 0 auto;
+        border-color: black;
+    }
+
+    .title-price {
+        font-size: 40px;
+    }
+
+    .title-price {
+        text-align: center;
+        margin-bottom: -8px;
+    }
+
+    .tab-price {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        .tab-links {
+            display: flex;
+            justify-content: center;
+
+            .tablink-price {
+                border: 1px solid #a19288;
+                padding: 9px 32px;
+                margin: 20px 20px;
+                font-weight: 600;
+                transition: 0.2s;
+
+                &.active {
+                    color: #fff;
+                    background-color: $font-color-dark;
+                }
+            }
+        }
+    }
+
+    .price-separator {
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+
+    .tabcontent-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main-service-price-desc {
+            margin-bottom: 20px;
+        }
+
+        .image-price {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .single-price {
+            font-weight: 600;
+            display: flex;
+            position: relative;
+            width: 40%;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            padding-top: 7px;
+            border-bottom: 1px solid $font-color-dark;
+
+            .single-price-price {
+                border-left: 1px solid $font-color-dark;
+                padding-left: 25px;
+            }
+
+            .single-price-desc {
+                font-weight: 500;
+            }
+
+            &::before {
+                counter-increment: price;
+                content: counter(price);
+                position: absolute;
+                left: -19px;
+                bottom: -14px;
+                font-size: 21px;
+            }
+        }
+    }
+}

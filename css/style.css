@@ -387,4 +387,120 @@ nav span {
   margin: 0 auto;
   font-size: 33px;
 }
+
+.price {
+  height: 100vh;
+  background-color: #fff;
+  color: #282121;
+  counter-reset: price;
+}
+
+.price hr {
+  width: 5%;
+  margin: 0 auto;
+  border-color: black;
+}
+
+.price .title-price {
+  font-size: 40px;
+}
+
+.price .title-price {
+  text-align: center;
+  margin-bottom: -8px;
+}
+
+.price .tab-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.price .tab-price .tab-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price .tab-price .tab-links .tablink-price {
+  border: 1px solid #a19288;
+  padding: 9px 32px;
+  margin: 20px 20px;
+  font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.price .tab-price .tab-links .tablink-price.active {
+  color: #fff;
+  background-color: #282121;
+}
+
+.price .price-separator {
+  width: 80%;
+  margin: 0 auto 30px auto;
+}
+
+.price .tabcontent-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price .tabcontent-price .main-service-price-desc {
+  margin-bottom: 20px;
+}
+
+.price .tabcontent-price .image-price {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.price .tabcontent-price .single-price {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 7px;
+  border-bottom: 1px solid #282121;
+}
+
+.price .tabcontent-price .single-price .single-price-price {
+  border-left: 1px solid #282121;
+  padding-left: 25px;
+}
+
+.price .tabcontent-price .single-price .single-price-desc {
+  font-weight: 500;
+}
+
+.price .tabcontent-price .single-price::before {
+  counter-increment: price;
+  content: counter(price);
+  position: absolute;
+  left: -19px;
+  bottom: -14px;
+  font-size: 21px;
+}
 /*# sourceMappingURL=style.css.map */

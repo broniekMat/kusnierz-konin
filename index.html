@@ -8,7 +8,7 @@
     <title>Kuśnierz Konin</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="./vendor/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="./vendor/owlcarousel/owl.theme.default.min.css">
@@ -86,7 +86,7 @@
             <div class="tab">
                 <h2>Wykonujemy usługi: </h2>
                 <hr>
-                <div class="tablinks" onclick="openServices(event, 'Kusnierz')">
+                <div class="tablinks defaultOpen-service" onclick="openServices(event, 'Kusnierz')">
                     <img src="./images/services/li-style.svg" alt="">
                     <p class="tablinks-text">Kuśnierskie</p>
                 </div>
@@ -98,7 +98,7 @@
                     <img src="./images/services/li-style.svg" alt="">
                     <p class=" tablinks-text">Krawieckie</p>
                 </div>
-                <div class=" tablinks" onclick="openServices(event, 'Tapicer')" id="defaultOpen">
+                <div class=" tablinks" onclick="openServices(event, 'Tapicer')">
                     <img src="./images/services/li-style.svg" alt="">
                     <p class="tablinks-text">Tapicerskie</p>
                 </div>
@@ -223,6 +223,101 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <h5 class="title-price">Cenniki</h5>
+            <hr>
+            <div class="tab-price">
+                <div class=tab-links>
+                    <p class="tablink-price defaultOpen-price" onclick="openPrice(event, 'tab-med-price')">Tapicerstwo
+                        medyczne</p>
+                    <p class="tablink-price" onclick="openPrice(event, 'tab-sam-price')">tapicerstwo
+                        samochodowe</p>
+                    <p class="tablink-price" onclick="openPrice(event, 'tab-kus-price')">kuśnierz</p>
+                </div>
+                <img class="price-separator" src="./images/price/separate-price.svg" alt="">
+            </div>
+            <div class="tab-price-content">
+                <div id="tab-med-price" class="tabcontent-price">
+                    <h3 class="main-service-price">Cennik tapicerstwo medyczne</h3>
+                    <h4 class="main-service-price-desc">Tapicerstwo medyczne | cena bez materiałó oraz dodatków</h4>
+                    <img class="image-price" src="./images/price/image-price.svg" alt="">
+                    <div class="single-price">
+                        <p class="single-price-desc">Kozetka lekarska wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kozetka lekarska wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kozetka lekarska wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kozetka lekarska wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kozetka lekarska wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+
+                </div>
+
+                <div id="tab-sam-price" class="tabcontent-price">
+                    <h3 class="main-service-price">Cennik tapicerstwo samochodowe</h3>
+                    <h4 class="main-service-price-desc">Tapicerstwo medyczne | cena bez materiałó oraz dodatków</h4>
+                    <img class="image-price" src="./images/price/image-price.svg" alt="">
+                    <div class="single-price">
+                        <p class="single-price-desc">Samochód wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Samochód wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Samochód wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Samochód wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Samochód wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                </div>
+                <div id="tab-kus-price" class="tabcontent-price">
+                    <h3 class="main-service-price">Cennik Kuśnierz</h3>
+                    <h4 class="main-service-price-desc">Tapicerstwo medyczne | cena bez materiałó oraz dodatków</h4>
+                    <img class="image-price" src="./images/price/image-price.svg" alt="">
+                    <div class="single-price">
+                        <p class="single-price-desc">Kuśnierz wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kuśnierz wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kuśnierz wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kuśnierz wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                    <div class="single-price">
+                        <p class="single-price-desc">Kuśnierz wymiana obszycia</p>
+                        <p class="single-price-price">140zł - 280zł</p>
+                    </div>
+                </div>
+
+            </div>
     </section>
 </body>
 
