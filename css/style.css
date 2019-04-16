@@ -497,9 +497,9 @@ nav span {
 
 .price .tabcontent-price .single-price::before {
   counter-increment: price;
-  content: counter(price);
+  content: counter(price,decimal-leading-zero);
   position: absolute;
-  left: -19px;
+  left: -30px;
   bottom: -14px;
   font-size: 21px;
 }
